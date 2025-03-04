@@ -6,14 +6,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
   }
-
+  
   html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
   
   body{
-    background: #f0f0f0;   
+    background: #f0f0f0;
     }
   
   /* General Header Styles */
@@ -22,7 +22,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    object-fit: cover;
     height: 100vh;
   }
   
@@ -65,7 +64,7 @@
     left: -100%; /* Initially hidden off-screen */
     height: 100%;
     width: 250px;
-     overflow-y: auto;
+     /* overflow-y: auto; */
     transition: left 0.3s ease-in-out; /* Transition for left property */
     display: flex;
     flex-direction: column;
@@ -196,7 +195,7 @@
     display: flex;
     align-items: center;
     box-shadow: inset 0 0 1.6em -0.6em #714da6;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
@@ -280,10 +279,7 @@
     text-align: left;
   }
 
-  .image-container {
-    max-height: 100vh;
-    overflow: hidden;
-}
+ 
 
   .about-section img {
     width: 450px;
@@ -296,7 +292,7 @@
 
 .service-section {
     clear: both;
-    overflow: auto;
+    /* overflow: auto; */
 }
   
 
