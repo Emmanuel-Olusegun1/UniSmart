@@ -1,0 +1,301 @@
+/*main style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background: #f0f0f0;   
+    }
+  
+  /* General Header Styles */
+  .top{
+    background-image: linear-gradient(rgba(67, 65, 65, 0.5), rgba(113, 109, 109, 0.7)),url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+  }
+  
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  z-index: 1;
+  }
+  
+  .logo {
+  width: 10rem;
+  height: auto;
+  border-radius: 10%;
+  }
+  
+  /* Menu Toggle Button */
+  .menu-toggle {
+  display: none; /* Default hidden */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  }
+  
+  .menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+  }
+  
+  /* Navigation Drawer */
+  .nav-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    height: 100%;
+    width: 250px;
+     overflow-y: auto;
+    transition: left 0.3s ease-in-out; /* Transition for left property */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    z-index: 999;
+  }
+  
+  
+  .nav-drawer.open {
+  left: 0; /* Slide in when "open" class is added */
+  }
+  
+  .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .nav-links li {
+  margin: 15px 0;
+  }
+  
+  .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  }
+  
+  .nav-links li a:hover, footer a:hover {
+  color: green;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hide toggle button on large screens */
+  }
+  
+  .nav-drawer {
+    position: static;
+    display: flex; /* Show nav on large screens */
+    flex-direction: row;
+    justify-content: flex-end;
+    background: n;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  }
+  
+  @media (max-width: 767px) {
+  .menu-toggle {
+    display: flex; /* Show toggle button on small screens */
+  }
+  .nav-drawer {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds blur effect to the background */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+  }
+  
+  nav a.active{
+    padding: .4rem;
+    border-radius: .3rem;
+    color: green;
+  }
+  
+  
+  
+  
+  /*Hero style*/
+  
+  .hero{
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  .hero h1 {
+    font-size: 2rem;
+    color: #E6E6FA;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    max-width: 600px; /* Optional: limit paragraph width */
+    color: #E6E6FA;
+    text-shadow: 2px 2px 4px #00000080; /* Add shadow */
+  }
+  
+  /* From Uiverse.io by adamgiebl */ 
+  .cssbuttons-io-button {
+    background: #2D2D2D ;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em orange;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: orange;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+    
+
+
+
+
+/*About style*/
+  
+.about-section{
+    align-items: center;
+    min-height: 100vh;
+}
+.service-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+    gap: 20px; 
+    padding: 40px 20px;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+}
+  
+  .about-section .content {
+    flex: 1 1 500px; /* Allows flexibility for smaller screens */
+    max-width: 600px; /* Limits the width for better readability */
+    text-align: right; /* Aligns text to the left */
+
+  }
+
+  
+  .about-section h2, .service-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bolder;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .image-container {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+  .about-section img {
+    width: 450px;
+    height: 70vh;
+    object-fit: cover;
+    border-radius:   255px 29px  255px 29px;
+  }
+
+/* Service styles */
+
+.service-section {
+    clear: both;
+    overflow: auto;
+}
+  
+
+.service-section h2 {
+   padding-left: 15px;
+   color: #2D2D2D;
+}

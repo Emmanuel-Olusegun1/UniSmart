@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSmart | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Boxicons link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <!--Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include Animate.css for smooth animations -->
+
+    <!-- `````aos cdn -->
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+
+</head>
+<body>
+
+
+  <div class="top">
+    <header class="bg-black/40 sticky">
+      <img src="Logo.png" alt="logo" class="logo">
+      <button class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-drawer" id="navDrawer">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active"><i class='bx bxs-home'></i> Home</a></li>
+          <li><a href="#service"><i class='bx bxs-briefcase'></i> Services</a></li>
+          <li><a href="pricing.html"><i class='bx bx-dollar-circle'></i> Get-a-quote</a></li>
+          <li><a href=" faqs.html"><i class='bx bx-help-circle'></i> FAQs</a></li>
+          <li><a href="contact.html" ><i class='bx bxs-contact'></i>  contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+  
+      <!--popup section start-->
+   
+  
+      <!--popup section ends-->
+  
+      <!--Hero Section Start-->
+  
+      <section class="hero">
+          <h1 data-aos="zoom-in">Fast, Reliable, and Hassle-Free Online Services for <br> LAUTECH Students</h1>
+          <p data-aos="fade-left">Need help with portal payments, course registration, document editing, or printing? Uni Smart makes it easy! Submit your request online, and we’ll handle everything for you—quick, secure, and stress-free.</p>
+  
+          <a href="#service" style="text-decoration: none; scroll-behavior: smooth;">
+  <button class="cssbuttons-io-button" data-aos="fade-up">
+    EXPLORE
+    <div class="icon">
+      <svg
+        height="24"
+        width="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+  </button>
+  </a>
+  </section>
+  <!--Hero section End-->
+  </div>
+
+
+<!-- About Section -->
+  <section class="about-section justify-between flex flex-col gap-4 py-10 px-6">
+    <div data-aos="fade-right" data-aos-duration="2000">
+      <h2>About Us</h2>
+    </div>
+    <div class="flex flex-col-reverse md:flex-row justify-between mx-auto gap-5">
+      <div class="image-container" data-aos="fade-left">
+        <img src="bg.jpeg" alt="aimg">
+      </div>
+      <div class="content" data-aos="fade-right">
+        <p>At <b>UniSmart</b>, we understand the challenges students face when handling online academic transactions. That’s why we’ve created a seamless and efficient Cyber Café service tailored specifically for <b>LAUTECH</b> students.</p>
+        <p>Our platform helps students with <b>portal payments, course form registration, document editing, and printing services</b>—all from the comfort of their devices. No more long queues or frustrating errors; we handle the process for you, ensuring accuracy, speed, and convenience.</p>
+        <p>With secure payment processing, automated confirmations via Zapier, and a dedicated admin panel powered by Supabase, we guarantee a smooth and transparent experience. Whether you need to pay tuition, register for courses, or prepare essential documents, <b>UniSmart is here to make it easy.</b></p>
+        <p> <b>Reliable. Secure. Student-Friendly. Your academic needs, simplified!</b></p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Service section -->
+<section class="service-section" id="service">
+  <h2 class="text-center text-3xl font-semibold mb-8" data-aos="fade-left">Our Services</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+    <!-- Course Registration -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl" >
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">Course Registration Assistance</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Streamline your course registration process with ease! Uni Smart offers personalized support to help you register for your courses quickly and without hassle. Simply provide your course details, and we’ll handle the rest.</p>
+        <a href="#" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Tuition Fee Payment -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">Tuition Fee Payment Processing</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Paying your tuition fees has never been easier! With Uni Smart, you can conveniently process your tuition fee payments online. Simply provide the necessary payment details, and we’ll take care of the rest.</p>
+        <a href="/tuition-payment" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- Medical Fee Payment -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">Medical Fee Payment Processing</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Take the stress out of paying your medical fees with Uni Smart. Our platform makes it easy to securely pay for medical services and fees directly online. Simply provide your medical fee details, and we’ll process the payment on your behalf.</p>
+        <a href="/medical-fee-payment" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- Faculty Fee Payment -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">Faculty Fee Payment Processing</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Managing your faculty fees is simple with Uni Smart. We offer an easy, secure way to process your faculty fees online. Just provide the necessary details, and we’ll handle the payment for you, ensuring it’s completed smoothly and on time.</p>
+        <a href="/faculty-fee-payment" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- Portal Issues Assistance -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">Portal Issues Assistance</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Experiencing issues with your student portal? Uni Smart is here to help! Whether you're having trouble accessing your account, submitting forms, or navigating the portal, our team provides prompt and reliable support.</p>
+        <a href="/portal-issues" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- Document Printing & Photocopying -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">Document Printing & Photocopying</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Need your documents printed or copied quickly and efficiently? Uni Smart offers high-quality printing and photocopying services for all your academic and personal needs.</p>
+        <a href="/document-printing" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- PDF Editing & Formatting -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">PDF Editing & Formatting</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Need help editing or formatting your PDFs? Uni Smart provides professional PDF editing and formatting services to ensure your documents look polished and are ready for submission, our team can assist you in making your PDFs perfect.</p>
+        <a href="/pdf-editing" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- Document Conversion -->
+    <div data-aos="fade-up">
+    <div class="bg-white w-full shadow-lg rounded-lg flex flex-col justify-between items-center relative overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-gradient-to-b from-green-500 to-green-500 w-full p-4">
+        <h3 class="text-white text-lg font-semibold text-center">Document Conversion</h3>
+      </div>
+      <div class="p-6 flex flex-col justify-between items-center flex-grow">
+        <p class="text-gray-600 text-center mb-4">Easily convert your documents to the format you need with Uni Smart. Whether it's converting Word to PDF, Excel to CSV, or any other file format, we offer fast and reliable document conversion services.</p>
+        <a href="/document-conversion" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Learn More</a>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer class="bg-gray-800 text-white py-8 mt-16">
+  <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- About Section in Footer -->
+          <div class="text-center md:text-left">
+              <h4 class="font-semibold text-lg mb-4">About UniSmart</h4>
+              <p>UniSmart provides seamless and secure online services for LAUTECH students. We assist with portal payments, course registration, document editing, printing, and more. Trust us to make your academic experience easier and stress-free.</p>
+          </div>
+          
+          <!-- Quick Links Section -->
+          <div class="text-center md:text-left">
+              <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                  <li><a href="index.html"> <i class='bx bxs-home'></i> Home</a></li>
+                  <li><a href="#service"><i class='bx bxs-briefcase'></i> Services</a></li>
+                  <li><a href="pricing.html"><i class='bx bx-dollar-circle'></i> Get-a-quote</a></li>
+                  <li><a href="faqs.html"><i class='bx bx-help-circle'></i> FAQs</a></li>
+                  <li><a href="contact.html"><i class='bx bxs-contact'></i> Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact & Social Media Links -->
+          <div class="text-center md:text-left">
+              <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+              <p>Email: <a href="mailto:support@unismart.com">support@unismart.com</a></p>
+              <p>Phone: <a href="tel:+1234567890">+234 9034010384 </a></p>
+              <div class="mt-4">
+                  <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Copyright Section -->
+      <div class="mt-8 text-center">
+          <p class="text-sm text-gray-400">&copy; 2025 UniSmart. All Rights Reserved|<a href="http://">Built By Byteworks</a></p>
+      </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
+
+
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navDrawer = document.getElementById('navDrawer');
+    
+    menuToggle.addEventListener('click', () => {
+      navDrawer.classList.toggle('open'); // Toggle "open" class
+      console.log(navDrawer.classList); // Debug: Check the class list of navDrawer
+    });
+      </script>
+      <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  // Initialize AOS
+  AOS.init({
+  offset: 200,
+  delay: 0,
+  duration: 1000,
+  easing: 'ease',
+  once: false,
+});
+</script>
+
+</body>
+</html>

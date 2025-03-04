@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSmart | FAQs</title>
+    <!-- css styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="cstyle.css"> -->
+    <!--Boxicons link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <!--Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include Animate.css for smooth animations -->
+
+    <!-- `````aos cdn -->
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+
+</head>
+
+<style>
+    .hidden { display: none; }
+    .rotate-90 { transform: rotate(90deg); }
+</style>
+
+<body>
+
+
+  <div class="top">
+    <header class="bg-black/40 sticky">
+      <img src="logo.png" alt="logo" class="logo">
+      <button class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-drawer" id="navDrawer">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class='bx bxs-home'></i> Home</a></li>
+          <li><a href="#service"><i class='bx bxs-briefcase'></i> Services</a></li>
+          <li><a href="pricing.html"><i class='bx bx-dollar-circle'></i> Get-a-quote</a></li>
+          <li><a href=" faqs.html" class="active"><i class='bx bx-help-circle'></i> FAQs</a></li>
+          <li><a href="contact.html"><i class='bx bxs-contact'></i> contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+      <!--Hero Section Start-->
+  
+      <section class="hero">
+        <h1 data-aos="zoom-in">FAQs</h1>
+        <p data-aos="fade-left">Need help with portal payments, course registration, document editing, or printing? Uni Smart makes it easy! Submit your request online, and we’ll handle everything for you—quick, secure, and stress-free.</p>
+</section>
+<!--Hero section End-->
+</div>
+
+
+
+
+<section class="max-w-6xl mx-auto p-6">
+    <h2 class="text-3xl font-bold text-center mb-8">FAQ</h2>
+    <p class="text-center text-gray-600 mb-12">Find answers to General and FAQs questions.</p>
+    
+    <div class="grid md:grid-cols-2 gap-6">
+        <div>
+            <h3 class="text-xl font-semibold mb-4">General Questions</h3>
+            <div class="space-y-4">
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        What services does Uni Smart offer?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">Uni Smart provides a range of online cyber café services tailored for LAUTECH students. These include portal payments, course form registration, document editing, and document printing, e.t.c.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        How can I request a service on Uni Smart?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">To request a service, simply visit the website, select the service you need, fill out the request form with the required details, and proceed with payment. Once your request is received, it will be processed accordingly.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        What payment methods are accepted for transactions?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">Uni Smart accepts payments through bank transfers, mobile banking, and other secure payment gateways. Payment instructions will be provided after you submit your request.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        How long does it take for my request to be processed?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">Processing times vary depending on the service: <br>
+                        <b>Portal Payments & Course Registration:</b> Typically processed within few hours. <br>
+                       <b> Document Editing & Printing: </b> Usually completed within a 24hr hours, depending on the request volume.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        Is Uni Smart affiliated with LAUTECH or its official portal?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">No, Uni Smart is an independent service provider and is not affiliated with LAUTECH or its official portal. It serves as a convenient platform for students to get their academic tasks done efficiently.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Frequently Asked Questions</h3>
+            <div class="space-y-4">
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        Do I need an account to use Uni Smart?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">No, you do not need to create an account. Simply fill out the service request form and proceed with payment.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        How to process your site for construction?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">You will receive an automatic confirmation via email or WhatsApp once your payment is verified.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        What happens if there is an issue with my request?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">If any issue arises, you will be contacted via your provided contact details, and the issue will be resolved promptly.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        Can I get a refund if my request is not processed?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">Yes, if your request cannot be completed for any reason, a refund will be processed based on our refund policy.</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="w-full text-left font-semibold flex justify-between items-center" onclick="toggleFAQ(this)">
+                        Who handles my portal payments and registrations?
+                        <span class="transition-transform transform rotate-0 bg-green-500 text-white w-8 h-8 flex items-center justify-center rounded-full">+</span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">All payments and registrations are handled by our trusted service team to ensure accuracy and reliability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Footer Section Start -->
+<footer class="bg-gray-800 text-white py-8 mt-16">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Section in Footer -->
+            <div class="text-center md:text-left">
+                <h4 class="font-semibold text-lg mb-4">About UniSmart</h4>
+                <p>UniSmart provides seamless and secure online services for LAUTECH students. We assist with portal payments, course registration, document editing, printing, and more. Trust us to make your academic experience easier and stress-free.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="text-center md:text-left">
+                <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html"> <i class='bx bxs-home'></i> Home</a></li>
+                    <li><a href="#service"><i class='bx bxs-briefcase'></i> Services</a></li>
+                    <li><a href="pricing.html"><i class='bx bx-dollar-circle'></i> Get-a-quote</a></li>
+                    <li><a href="faqs.html"><i class='bx bx-help-circle'></i> FAQs</a></li>
+                    <li><a href="contact.html"><i class='bx bxs-contact'></i> Contact</a></li>
+                </ul>
+            </div>
+  
+            <!-- Contact & Social Media Links -->
+            <div class="text-center md:text-left">
+                <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+                <p>Email: <a href="mailto:support@unismart.com">support@unismart.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+234 9034010384 </a></p>
+                <div class="mt-4">
+                    <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="text-2xl text-gray-400 mx-2"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright Section -->
+        <div class="mt-8 text-center">
+            <p class="text-sm text-gray-400">&copy; 2025 UniSmart. All Rights Reserved|<a href="http://">Built By Byteworks</a></p>
+        </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+  
+  
+  
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const navDrawer = document.getElementById('navDrawer');
+      
+      menuToggle.addEventListener('click', () => {
+        navDrawer.classList.toggle('open'); // Toggle "open" class
+        console.log(navDrawer.classList); // Debug: Check the class list of navDrawer
+      });
+        </script>
+        <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+    offset: 200,
+    delay: 0,
+    duration: 1000,
+    easing: 'ease',
+    once: false,
+  });
+  </script>
+
+
+<script>
+function toggleFAQ(button) {
+    const allFaqs = document.querySelectorAll('.border p');
+    const allIcons = document.querySelectorAll('.border button span');
+
+    // Get the associated paragraph and icon
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector('span');
+
+    // Close all FAQs
+    allFaqs.forEach(faq => {
+        if (faq !== answer) {
+            faq.classList.add('hidden');
+        }
+    });
+
+    // Reset all icons
+    allIcons.forEach(icon => {
+        icon.classList.remove('rotate-90');
+        icon.textContent = '+';
+    });
+
+    // Toggle the clicked FAQ
+    const isHidden = answer.classList.contains('hidden');
+    answer.classList.toggle('hidden', !isHidden);
+    
+    // Toggle icon rotation and change symbol
+    if (isHidden) {
+        icon.classList.add('rotate-90');
+        icon.textContent = '−';
+    } else {
+        icon.classList.remove('rotate-90');
+        icon.textContent = '+';
+    }
+}
+
+</script>
+
+  
+  </body>
+  </html>

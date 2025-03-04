@@ -1,0 +1,42 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    transition: all .3s;
+}
+
+.ctext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 20rem 0 20rem ;
+}
+
+.ctext h1{
+    text-align:center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.ctext p{
+    text-align:center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+a:hover{
+color: green;
+}
+
+  /* Responsive Design */
+  @media (min-width: 780px) {
+    .ctext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 5rem 0 5rem ; 
+    }
+    
+}
